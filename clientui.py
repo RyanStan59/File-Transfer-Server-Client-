@@ -8,7 +8,7 @@ def clientui():
 
     app = customtkinter.CTk()
     app.geometry("720x480")
-    app.title("File transfer App")
+    app.title("File Transfer App")
 
     title = customtkinter.CTkLabel(app, text="Select a file for transfer") 
     title.pack(padx=10, pady=10)
@@ -19,7 +19,6 @@ def clientui():
     app.mainloop()
 
 def select_file():
-
     file_path = filedialog.askopenfilename()
     if file_path:
         print(f"Selected file: {file_path}")
